@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bookmark Website</title>
+</head>
+<body onload="updateBookmark()">
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Website Bookmarks</h1>
+            <form id="myForm">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="siteName" placeholder="Site name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="siteUrl" placeholder="Site URL" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-success"><i class="fa fa-paper-plane">Submit</i></button>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="showBookmark"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Bookmarker by Anhvietcr <br/>
+            <h4>(Bootstrap + HTML5 + Pure Javascript)</h4>
+        </div>
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bookmark.js"></script>
+</body>
+</html>
